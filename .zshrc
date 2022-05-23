@@ -26,3 +26,6 @@ alias ll="ls -FGlAhp"
 alias cp="cp -iv"
 alias mv="mv -iv"
 alias mkdir="mkdir -pv"
+
+# python
+alias python="python3"
