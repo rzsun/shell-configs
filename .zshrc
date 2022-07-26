@@ -29,3 +29,8 @@ alias mkdir="mkdir -pv"
 
 # python
 alias python="python3"
+
+# quick git binds
+alias gs="g s"
+alias ga="g a"
+alias gc="g c"
