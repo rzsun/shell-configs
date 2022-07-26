@@ -17,8 +17,8 @@ alias k="kubectl"
 
 # Navigation binds
 alias ..="cd .."
-alias ..="cd ../.."
-alias ..="cd ../../.."
+alias ...="cd ../.."
+alias ....="cd ../../.."
 
 # Preferred implementations
 alias ls="ls -Gpa"
