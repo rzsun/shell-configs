@@ -14,8 +14,8 @@
     p = push
     rmd = rm $(git ls-files --deleted)
     pop = stash pop
-    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-    lga = log --graph --decorate --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen%cr %C(bold blue)<%an>' --abbrev-commit
+    lga = log --graph --decorate --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %Cgreen%cd %C(bold blue)%cn <%ce> %Creset%s' --abbrev-commit --all
     main = checkout main
     master = checkout master
     b = "!f() { if [ $1 ]; then git checkout `git for-each-ref --sort=-committerdate refs/heads/ | sed 's/.*\\/heads\\/\\(.*\\)/\\1/' | sed -n $1p`; else git for-each-ref --sort=-committerdate refs/heads/ | sed 's/.*\\/heads\\/\\(.*\\)/\\1/' | head -n 7 | cat -n; fi }; f"
