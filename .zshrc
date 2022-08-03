@@ -35,3 +35,11 @@ alias gs="g s"
 alias ga="g a"
 alias gc="g c"
 alias gp="g p"
+
+# homebrew
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# chruby
+source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
+source $(brew --prefix)/opt/chruby/share/chruby/auto.sh
+chruby ruby-3.1.2
