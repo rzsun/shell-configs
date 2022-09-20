@@ -8,17 +8,12 @@ source $ZSH/oh-my-zsh.sh
 
 cd ~/dev
 
-# Common binds
+# Application shorthands
 alias g="git"
 alias clr="clear"
 alias c="open -a \"Visual Studio Code\""
 alias f="open -a  Finder"
 alias k="kubectl"
-
-# Navigation binds
-alias ..="cd .."
-alias ...="cd ../.."
-alias ....="cd ../../.."
 
 # Preferred implementations
 alias ls="ls -Gpa"
@@ -27,17 +22,26 @@ alias cp="cp -iv"
 alias mv="mv -iv"
 alias mkdir="mkdir -pv"
 
-# python
-alias python="python3"
-
-# quick git binds
+# Git shorthands
 alias gs="g s"
 alias ga="g a"
 alias gc="g c"
 alias gp="g p"
 
-# homebrew
+# Navigation binds
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias ......="cd ../../../../.."
+alias .......="cd ../../../../../.."
+alias ........="cd ../../../../../../.."
+
+# Homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# Python
+alias python="python3"
 
 # chruby
 source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
