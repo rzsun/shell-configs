@@ -42,6 +42,10 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Python
 alias python="python3"
+# pyenv
+PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
 
 # chruby
 source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
